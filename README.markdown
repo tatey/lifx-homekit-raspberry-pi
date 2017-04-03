@@ -33,15 +33,15 @@ Unmount the disk.
 
 Copy the image.
 
-    sudo dd bs=1m if=2016-09-23-raspbian-jessie-lite.img of=/dev/rdisk<N>
+    sudo dd bs=1m if=raspbian_lite_latest of=/dev/rdisk<N>
 
 Plug the MicroSD card back into the Raspberry Pi, connect the the ethernet
 cable, power cable, and power on.
 
-Use `nmap` to find the IP address of your Raspberry Pi (Probably the highest
+Use [`nmap`](https://nmap.org) to find the IP address of your Raspberry Pi (Probably the highest
 number).
 
-    namp -sn 10.0.0.0/24
+    nmap -sn 10.0.0.0/24
 
 Shell into your Raspberry Pi and run the install script.
 
